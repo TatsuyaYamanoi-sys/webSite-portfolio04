@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>nailsalon"NATUL"</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/modules/reset.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="globalContainer">
+        <div class="bg01"></div>
+        <div class="bg02"></div>
         <div class="container">
             <header>
                 <div class="header-inner">
@@ -17,134 +21,279 @@
                     <div class="globalMenu">
                         <nav>
                             <ul>
-                                <li><a href="#about">about</a></li>
-                                <li><a href="#news">news</a></li>
-                                <li><a href="#works">works</a></li>
-                                <li><a href="#contact">contact</a></li>
+                                <li><a href="#news">NEWS</a></li>
+                                <li><a href="#shop">SHOP</a></li>
+                                <li><a href="#gallery">GALLERY</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
                             </ul>
                         </nav>
                     </div>                    
                 </div>
             </header>
             <div class="mainVisual">
-                <div class="mainVisual__img">
-                    <div class="mainVisual__inner">
-                        <div class="mainVisual__txtarea">
-                            <h2 class="mainVisual__ttl">main visual ttl</h2>
-                            <p class="mainVisual__subttl">main visual subttl</p>
-                        </div>
-                        <div class="mainVisual__banner">
-                            <a href=""><button>お問い合わせはこちら</button></a>
-                        </div>
+                <div class="mainVisual__img skewed"></div>
+                <div class="mainVisual__inner">
+                    <div class="mainVisual__txtarea">
+                        <h2 class="mainVisual__ttl">NATUL</h2>
+                        <p class="mainVisual__subttl">Natural gorgeousness.</p>
+                    </div>
+                    <div class="mainVisual__banner">
+                        <a href=""><button>お問い合わせはこちら</button></a>
                     </div>
                 </div>
+                <div class="mainVisual__topnews">
+                    <a href="/">
+                        <p class="topnews-ttl">最新情報</p>
+                        <span class="topnews-discription">
+                            大宮店がリニューアルオープン
+                        </span>
+                        <div class="topnews-arrow"></div>
+                    </a>
+                </div>
             </div>
-            <section id="about">
+            <section class="concept">
                 <div class="inner">
-                    <div class="section__header">
-                        <h2>about</h2>
+                    <div class="concept__header">
+                        <h2>Season Concept</h2>
                     </div>
-                    <div class="section__body">
-                        <img src="img/" alt="about" class="about__img">
-                        <div class="textarea">
-                            <h2 class="section__ttl">about us</h2>
-                            <p class="section__discription">
-                                aboutの説明です。
-                            </p>
-                        </div>
+                    <div class="concept__body">
+                        <p class="concept__discription">
+                            ホリデーシーズンの
+                        </p>
+                        <p class="concept__discription">
+                            ナチュラルな装いにふさわしい
+                        </p>
+                        <p class="concept__discription">
+                            Cuteなアクセントを
+                        </p>
                     </div>
                 </div>
             </section>
             <section id="news">
-                <div class="inner">
-                    <div class="section__header">
-                        <h2>news</h2>
-                    </div>
-                    <div class="section__list">
-                        <ul>
-                            <li>
-                                <div class="section__card">
-                                    <img src="img/" alt="news" class="card01">
-                                    <p class="section__discription">
-                                        card1の説明です。
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="section__card">
-                                    <img src="" alt="" class="card02">
-                                    <p class="section__discription">
-                                        card2の説明です。
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="section__card">
-                                    <img src="" alt="" class="card03">
-                                    <p class="section__discription">
-                                        card3の説明です。
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="section__header odd">
+                    <h2>NEWS</h2>
                 </div>
+                <div class="section__container odd">
+                    <div class="section__inner">
+                        <div class="section__swiper">
+                            <div class="swiper-container main-slider loading">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="/">
+                                            <figure class="slide-bgimg" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E)" data-swiper-parallax-x="50%">
+                                                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E" class="entity-img" />
+                                            </figure>
+                                            <div class="content">
+                                                <p class="title">Blog ttl01</p>
+                                                <span class="date">2021/01/01</span>
+                                                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="/">
+                                            <figure class="slide-bgimg" style="background-image:url(img/img/blog02.jpg)" data-swiper-parallax-x="50%">
+                                                <img src="img/img/blog02.jpg" class="entity-img" />
+                                            </figure>
+                                            <div class="content">
+                                                <p class="title">Blog ttl02</p>
+                                                <span class="date">2020/12/24</span>
+                                                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="/">
+                                            <figure class="slide-bgimg" style="background-image:url(img/img/blog03.jpg)" data-swiper-parallax-x="50%">
+                                                <img src="img/img/blog03.jpg" class="entity-img" />
+                                            </figure>
+                                            <div class="content">
+                                                <p class="title">Blog ttl03</p>
+                                                <span class="date">2020/12/23</span>
+                                                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="/">
+                                            <figure class="slide-bgimg" style="background-image:url(img/img/blog04.jpg)" data-swiper-parallax-x="50%">
+                                                <img src="img/img/blog04.jpg" class="entity-img" />
+                                            </figure>
+                                            <div class="content">
+                                                <p class="title">Blog ttl04</p>
+                                                <span class="date">2020/12/19</span>
+                                                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div><!-- swiper-wrapper -->
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                                <div class="swiper-button-next swiper-button-white"></div>
+                            </div><!-- swiper-container main-slider loading -->
+                                
+                                <!-- Thumbnail navigation -->
+                            <div class="swiper-container nav-slider loading">
+                                <div class="swiper-wrapper" role="navigation">
+                                    <div class="swiper-slide">
+                                        <figure class="slide-bgimg" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E)">
+                                        <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E" class="entity-img" />
+                                        </figure>
+                                        <div class="content">
+                                        <p class="title">Blog ttl01</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="slide-bgimg" style="background-image:url(img/img/blog02.jpg)">
+                                        <img src="img/img/blog02.jpg" class="entity-img" />
+                                        </figure>
+                                        <div class="content">
+                                        <p class="title">Blog ttl02</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="slide-bgimg" style="background-image:url(img/img/blog03.jpg)">
+                                        <img src="img/img/blog03.jpg" class="entity-img" />
+                                        </figure>
+                                        <div class="content">
+                                        <p class="title">Blog ttl03</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="slide-bgimg" style="background-image:url(img/img/blog04.jpg)">
+                                        <img src="img/img/blog04.jpg" class="entity-img" />
+                                        </figure>
+                                        <div class="content">
+                                        <p class="title">Blog ttl04</p>
+                                        </div>
+                                    </div>
+                                </div><!-- .swiper-wrapper -->
+                            </div><!-- .swiper-container nav-slider loading -->                        
+                        </div><!-- .section__swiper -->
+                    </div><!-- .section__inner -->
+                </div><!-- .section__container odd -->
             </section>
-            <section id="works">
-                <div class="inner">
-                    <div class="section__header">
-                        <h1>works</h1>
-                    </div>
-                    <div class="section__list">
-                        <ul>
-                            <li>
-                                <div class="section__card">
-                                    <img src="img/" alt="works" class="card01">
-                                    <p class="section__discription">
-                                        card1の説明です。
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="section__card">
-                                    <img src="img/" alt="works" class="card02">
-                                    <p class="section__discription">
-                                        card2の説明です。
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="section__card">
-                                    <img src="img/" alt="works" class="card03">
-                                    <p class="section__discription">
-                                        card3の説明です。
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <section id="shop">
+                <div class="section__header even">
+                    <h2>SHOP</h2>
                 </div>
+                <div class="section__container even">
+                    <div class="section__inner">
+                        <div class="section__list even">
+                            <ul>
+                                <li>
+                                    <div class="section__list-card">
+                                        <img src="img/img/shop01.jpg" alt="shop" class="card01">
+                                        <div class="section__list-txtarea">
+                                            <p class="section__list-ttl">心斎橋店</p>
+                                            <span class="section__list-discription">
+                                                心斎橋店の説明です。Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section__list-card">
+                                        <img src="img/img/shop02.jpg" alt="shop" class="card02">
+                                        <div class="section__list-txtarea">
+                                            <p class="section__list-ttl">大宮店</p>
+                                            <p class="section__list-discription">
+                                                大宮店の説明です。Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section__list-card">
+                                        <img src="img/img/shop03.jpg" alt="shop" class="card03">
+                                        <div class="section__list-txtarea">
+                                            <p class="section__list-ttl">川崎店</p>
+                                            <p class="section__list-discription">
+                                                川崎店の説明です。Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- #shop>.section__container -->
+            </section>
+            <section id="gallery">
+                <div class="section__header odd">
+                    <h1>GALLERY</h1>
+                </div>
+                <div class="section__container odd">
+                    <div class="section__inner">
+                        <div class="section__list">
+                            <ul>
+                                <li>
+                                    <div class="section__card">
+                                        <img src="img/" alt="gallery" class="card01">
+                                        <p class="section__discription">
+                                            card1の説明です。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section__card">
+                                        <img src="img/" alt="gallery" class="card02">
+                                        <p class="section__discription">
+                                            card2の説明です。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section__card">
+                                        <img src="img/" alt="gallery" class="card03">
+                                        <p class="section__discription">
+                                            card3の説明です。
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div><!-- .section__container -->
             </section>
             <section id="contact">
-                <div class="inner">
-                    <div class="section__header">
-                        <h1>contact</h1>
-                    </div>
-                    <div class="section__body">
-
-                    </div>
+                <div class="section__header even">
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="section__container even">
+                    <div class="section__inner">
+                        <div class="section__body even">
+                            <div class="section__img">google map</div>
+                            <div class="section__textarea">
+                                <h2 class="section__ttl">本社 : </h2>
+                                <p class="section__discription">
+                                    ○○県○○市○○○○１－１－１ 
+                                </br>
+                                    ネイリストビル1F
+                                </p>
+                                <h2 class="section__ttl">電話番号 : </h2>
+                                <p class="section__discription">
+                                    0120-123-456
+                                </p>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </section>
             <footer>
                 <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#news">news</a></li>
-                    <li><a href="#works">works</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
                 <small><p>&copy; 2021 Tatsuya Yamanoi PF04</p></small>
             </footer>
         </div><!-- container -->
     </div><!-- globalContainer -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script/vendors/swiper.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script/main.js"></script>
 </body>
 </html>
