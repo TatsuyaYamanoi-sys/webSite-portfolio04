@@ -627,7 +627,7 @@ small {
   height: 4000px;
   -webkit-transition: top 1.5s ease-out;
   transition: top 1.5s ease-out;
-  background: url("/img/bg/bubbles-pink.png") repeat-y center top;
+  background: url("../img/bg/bubbles-pink.png") repeat-y center top;
 }
 
 .bg02 {
@@ -638,6 +638,6 @@ small {
   height: 4000px;
   -webkit-transition: top 1.5s ease-out;
   transition: top 1.5s ease-out;
-  background: url("/img/bg/bubbles-skyblue.png") repeat-y center top;
+  background: url("../img/bg/bubbles-skyblue.png") repeat-y center top;
 }
 /*# sourceMappingURL=style.css.map */
