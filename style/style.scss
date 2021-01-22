@@ -21,7 +21,7 @@
         fill-mode: $fill-mode;
     }
 }
-
+body { font-family: "Kameron", "Hannari", sans-serif; }
 // body {
 //     font-family: sans-serif;
 // }
@@ -113,10 +113,10 @@ header {
 
 .mainVisual {
     position: relative;
-    background-color: $bgLightBlue;
+    // background-color: $bgLightBlue;
     height: 760px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     overflow: hidden;
     &__img {
         display: block;
@@ -139,7 +139,7 @@ header {
         align-items: center;
         padding-bottom: 20px;
         & > h2 {
-            @extend .font-lg;
+            font-size: 3.6rem;
         }
         & > p {
             @extend .font-md;
@@ -227,10 +227,10 @@ header {
 }
 .concept {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
     &__header {
         @extend .font-lg;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
     }
     &__body {
 
@@ -239,7 +239,7 @@ header {
         @extend .font-lr;
         font-weight: 600;
         color: $cPink;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 }
 
@@ -348,7 +348,7 @@ section {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin: 90px 0 0 18%;
+        margin: 90px 0 0 10%;
         border-radius: 20px;
         overflow: hidden;
     }
@@ -394,7 +394,7 @@ section {
         }
     }
     &__gallery {
-        margin: 90px 0;
+        margin: 90px 0 0 10%;
         & ul {
             display: flex;
             & li {
@@ -402,7 +402,7 @@ section {
                 &::before{
                     content: "";
                     display: block;
-                    padding-top: 115%;
+                    padding-top: 108%;
                 }
                 &:nth-child(1){
                     width: 50%;

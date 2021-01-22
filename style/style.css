@@ -11,7 +11,7 @@
 
 .swiper-container {
   width: 700px;
-  height: 400px;
+  height: 420px;
   margin: 0;
   display: inline-block;
   -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
@@ -131,6 +131,10 @@
           transform: translateX(-50px);
 }
 
+body {
+  font-family: "Kameron", "Hannari", sans-serif;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -168,7 +172,7 @@ a {
   font-size: 28px;
 }
 
-.font-lg, .mainVisual__txtarea > h2, .concept__header {
+.font-lg, .concept__header {
   font-size: 40px;
 }
 
@@ -244,10 +248,9 @@ header {
 
 .mainVisual {
   position: relative;
-  background-color: #e1ebff;
   height: 760px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   overflow: hidden;
 }
 
@@ -286,6 +289,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 20px;
+}
+
+.mainVisual__txtarea > h2 {
+  font-size: 3.6rem;
 }
 
 .mainVisual__banner {
@@ -391,17 +398,17 @@ header {
 
 .concept {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .concept__header {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .concept__discription {
   font-weight: 600;
   color: #ff82fa;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 section:not(:first-of-type) {
@@ -562,7 +569,7 @@ section:not(:first-of-type):not(#news):not(#shop):not(#gallery) .section__contai
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 90px 0 0 18%;
+  margin: 90px 0 0 10%;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -621,7 +628,7 @@ section:not(:first-of-type):not(#news):not(#shop):not(#gallery) .section__contai
 }
 
 .section__gallery {
-  margin: 90px 0;
+  margin: 90px 0 0 10%;
 }
 
 .section__gallery ul {
@@ -637,7 +644,7 @@ section:not(:first-of-type):not(#news):not(#shop):not(#gallery) .section__contai
 .section__gallery ul li::before {
   content: "";
   display: block;
-  padding-top: 115%;
+  padding-top: 108%;
 }
 
 .section__gallery ul li:nth-child(1) {
