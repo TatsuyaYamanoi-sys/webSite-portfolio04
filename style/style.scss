@@ -2,6 +2,26 @@
 @import "modules/variables";
 @import "modules/parallax-slider";
 
+@mixin animation(
+    $name,
+    $duration: 1s,
+    $timing-function: ease,
+    $delay: 0s,
+    $iteration-count: 1,
+    $direction: normal,
+    $fill-mode: forwards
+) {
+    animation: {
+        name: $name;
+        duration: $duration;
+        timing-function: $timing-function;
+        delay: $delay;
+        iteration-count: $iteration-count;
+        direction: $direction;
+        fill-mode: $fill-mode;
+    }
+}
+
 // body {
 //     font-family: sans-serif;
 // }
@@ -284,10 +304,20 @@ section {
         // margin: 40px 40px 80px 25%;
         @extend .font-lr;
         &.odd {
-            left: 18%;
+            left: 0;
+            @include animation(
+                $name: kf-run-section-ttl-odd,
+                $duration: 1.5s,
+                $timing-function: ease-in-out,
+            );
         }
         &.even {
-            right: 18%;
+            right: 0;
+            @include animation(
+                $name: kf-run-section-ttl-even,
+                $duration: 1.5s,
+                $timing-function: ease-in-out,
+            );
         }
     }
     &__body {
@@ -309,16 +339,15 @@ section {
         flex-direction: column;
     }
     &__ttl {
-        
+        margin-bottom: 14px;
     }
     &__discription {
-        margin-bottom: 10px;
+        margin-bottom: 24px;
     }
     &__swiper {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        max-width: 780px;
         margin: 90px 0 0 18%;
         border-radius: 20px;
         overflow: hidden;
@@ -351,17 +380,145 @@ section {
                 border-radius: 6px;
                 margin-bottom: 18px;
             }
+            & .txtarea {
+                height: 200px;
+                border-radius: 6px;
+            }
+            & .ttl {
+                @extend .font-md;
+                margin-bottom: 14px;
+            }
+            & .discription {
+                @extend .font-sm;
+            }
         }
-        &-txtarea {
-            height: 200px;
-            border-radius: 6px;
+    }
+    &__gallery {
+        margin: 90px 0;
+        & ul {
+            display: flex;
+            & li {
+                position: relative;
+                &::before{
+                    content: "";
+                    display: block;
+                    padding-top: 115%;
+                }
+                &:nth-child(1){
+                    width: 50%;
+                    margin-right: 6px;
+                }
+                &:nth-child(2){
+                    width: 24%;
+                    margin-right: 6px;
+                }
+                &:nth-child(3){
+                    width: 24%;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
-        &-ttl {
-            @extend .font-md;
-            margin-bottom: 14px;
-        }
-        &-discription {
-            @extend .font-sm;
+
+        &-card {
+            &01 {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: inline-block;
+                background-color: $cWhite;
+                margin-right: 10px;
+                overflow: hidden;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                & .ttl {
+                    @extend .font-lr;
+                    position: absolute;
+                    top: 28px;
+                    left: 20px;
+                    color: $cWhite;
+                }
+            }
+            &02 {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: inline-block;
+                background-color: $cWhite;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                & .ttl {
+                    @extend .font-xsm;
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    color: $cWhite;
+                }
+            }
+            &03 {
+                height: calc(50% - 3px);
+                width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: inline-block;
+                background-color: $cWhite;
+                margin-bottom: 6px;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                & .ttl {
+                    @extend .font-xsm;
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    color: $cWhite;
+                }
+            }
+            &04 {
+                height: calc(50% - 3px);
+                width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: calc(50% + 3px);
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: inline-block;
+                background-color: $cWhite;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                & .ttl {
+                    @extend .font-xsm;
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    color: $cWhite;
+                }
+            }
         }
     }
 }
@@ -414,4 +571,53 @@ small {
     height: 4000px;
     transition: top 1.5s ease-out;
     background: url(../img/bg/bubbles-skyblue.png) repeat-y center top;
+}
+
+.googlemap {
+    margin-right: 18px;
+    background-color: $cWhite;
+    border: 2px dotted $cBlack;
+    & iframe {
+        margin: 3px;
+    }
+}
+@keyframes kf-run-section-ttl-odd {
+    0% {
+        left: -15%;
+        transform: rotate(45deg);
+    }
+    70% {
+        transform: rotate(45deg);
+    }
+    80% {
+        left: 22%;
+        transform: rotate(65deg);
+    }
+    90% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        left: 18%;
+        transform: none;
+    }
+}
+@keyframes kf-run-section-ttl-even {
+    0% {
+        right: -15%;
+        transform: rotate(-45deg);
+    }
+    70% {
+        transform: rotate(-45deg);
+    }
+    80% {
+        right: 22%;
+        transform: rotate(-65deg);
+    }
+    90% {
+        transform: rotate(15deg);
+    }
+    100% {
+        right: 18%;
+        transform: none;
+    }
 }

@@ -13,7 +13,7 @@ class Main {
         $(window).on('scroll load', function(){
             var bg = $(window).scrollTop();
             $('.bg01').css({top:bg/10*-1});
-            $('.bg02').css({top:bg/5*-1});
+            $('.bg02').css({top:bg/4*-1});
         });
     }
 }
