@@ -305,19 +305,27 @@ section {
         @extend .font-lr;
         &.odd {
             left: 0;
-            @include animation(
-                $name: kf-run-section-ttl-odd,
-                $duration: 1.5s,
-                $timing-function: ease-in-out,
-            );
+            opacity: 0;
+            &.inview {
+                opacity: 1;
+                @include animation(
+                    $name: kf-run-section-ttl-odd,
+                    $duration: 1.5s,
+                    $timing-function: ease-in-out,
+                );
+            }
         }
         &.even {
             right: 0;
-            @include animation(
+            opacity: 0;
+            &.inview {
+                opacity: 1;
+                @include animation(
                 $name: kf-run-section-ttl-even,
                 $duration: 1.5s,
                 $timing-function: ease-in-out,
-            );
+                );
+            }
         }
     }
     &__body {
@@ -349,6 +357,7 @@ section {
         justify-content: flex-end;
         align-items: center;
         margin: 90px 0 0 10%;
+        border: 2px dotted $cBlack;
         border-radius: 20px;
         overflow: hidden;
     }
@@ -381,7 +390,9 @@ section {
                 margin-bottom: 18px;
             }
             & .txtarea {
-                height: 200px;
+                height: 220px;
+                border: 2px dotted $cBlack;
+                padding: 6px;
                 border-radius: 6px;
             }
             & .ttl {
@@ -395,6 +406,7 @@ section {
     }
     &__gallery {
         margin: 90px 0 0 10%;
+        border: 2px dotted $cBlack;
         & ul {
             display: flex;
             & li {
@@ -402,18 +414,18 @@ section {
                 &::before{
                     content: "";
                     display: block;
-                    padding-top: 108%;
+                    padding-top: 110%;  //アスペクト比率 height/width*100
                 }
-                &:nth-child(1){
+                &:first-child{
                     width: 50%;
                     margin-right: 6px;
                 }
                 &:nth-child(2){
-                    width: 24%;
+                    width: 25%;
                     margin-right: 6px;
                 }
                 &:nth-child(3){
-                    width: 24%;
+                    width: 25%;
                     display: flex;
                     flex-direction: column;
                 }
@@ -574,7 +586,7 @@ small {
 }
 
 .googlemap {
-    margin-right: 18px;
+    margin-right: 34px;
     background-color: $cWhite;
     border: 2px dotted $cBlack;
     & iframe {
@@ -583,6 +595,7 @@ small {
 }
 @keyframes kf-run-section-ttl-odd {
     0% {
+        opacity: 1;
         left: -15%;
         transform: rotate(45deg);
     }
@@ -603,6 +616,7 @@ small {
 }
 @keyframes kf-run-section-ttl-even {
     0% {
+        opacity: 1;
         right: -15%;
         transform: rotate(-45deg);
     }

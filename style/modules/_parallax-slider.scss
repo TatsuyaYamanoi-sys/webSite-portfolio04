@@ -1,3 +1,4 @@
+// %オブジェクト名{ ;} 呼び出し: @extend %オブジェクト名;
 %transition_all_03s {
   transition:all .3s ease;
 }
@@ -8,7 +9,7 @@
 
 .swiper-container {
   width: 700px;
-  height: 400px;
+  height: 420px;
   margin: 0;
   display:inline-block;
   // vertical-align:top;
