@@ -398,17 +398,39 @@ header {
 
 .concept {
   text-align: center;
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 }
 
 .concept__header {
   margin-bottom: 70px;
 }
 
+.concept__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 380px;
+  background: radial-gradient(100px circle, rgba(255, 195, 252, 0.95), rgba(255, 255, 255, 0));
+}
+
 .concept__discription {
-  font-weight: 600;
-  color: #ff82fa;
-  margin-bottom: 60px;
+  font-weight: 560;
+  color: gray;
+  margin-bottom: 70px;
+}
+
+.concept__discription:first-child {
+  margin-top: 60px;
 }
 
 section:not(:first-of-type) {

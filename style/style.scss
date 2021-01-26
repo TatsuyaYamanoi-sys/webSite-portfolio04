@@ -227,19 +227,27 @@ header {
 }
 .concept {
     text-align: center;
-    margin-bottom: 140px;
+    margin-bottom: 120px;
     &__header {
         @extend .font-lg;
         margin-bottom: 70px;
     }
     &__body {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 380px;
+        background:radial-gradient(100px circle,  rgba(255, 195, 252, 0.950), rgba(255, 255, 255, 0));
     }
     &__discription {
         @extend .font-lr;
-        font-weight: 600;
-        color: $cPink;
-        margin-bottom: 60px;
+        font-weight: 560;
+        color: $cGray;
+        margin-bottom: 70px;
+        &:first-child {
+            margin-top: 60px;
+        }
     }
 }
 
